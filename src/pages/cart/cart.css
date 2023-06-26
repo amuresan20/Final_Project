@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-image: url("https://img.freepik.com/premium-photo/modern-mock-up-decor-interior-design-minimal-cozy-living-room-empty-blue-wall-texture-background-3d-rendering_221619-645.jpg?w=1060");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  margin: 0px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.navbar div {
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+}
+.navbar a {
+  font-size: 25px;
+  margin-right: 10px;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  color: #d4a6bc;
+  font-weight: light;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
+  position: absolute;
+  font-size: 25px;
+  left: 50%;
+  top: 30%;
+  font-weight: bolder;
+  transform: translate(-120%, -10%);
+  text-align: right;
+  background-color: rgba(93, 163, 213, 0.763);
+  border-radius: 0px;
+  padding: 0 150px 280px 150px;
+}
+
+#cart .product-name {
+  width: 500px;
+  text-align: center;
+}
+
+#cart span {
+  font-size: 20px;
+  width: 200px;
+}
+
+#cart img {
+  width: 130px;
+  height: 70px;
+}
+
+#cart .product-details {
+  display: flex;
+  gap: 25px;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+#cart .buttons {
+  width: 220px;
+  border: none;
+  font-size: 40px;
+}
+
+.buttons button {
+  width: 50px;
+  height: 30px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #504747;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #dddddd;
+}
+
+.quantity {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  width: 20px;
+}
+
+#sum {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

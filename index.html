@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Casa Nova</title>
+    
+  </head>
+  <body>
+    <div id="app">
+      <div class="navbar" >
+        <div class="logo">
+          <img
+          src="logosite.jpg" style="height: 70px; border-radius: 15px;" 
+          alt="LOGO"
+        />
+        </div>
+        <div>
+          <a href="./index.html">Home</a>
+          <a href="./src/pages/details/details.html">Details</a>
+          <a href="./src/pages/cart/cart.html">Cart</a>
+          <a href="./src/pages/admin/admin.html">Admin</a>
+        </div>
+        <li id="search-bar">
+          <input type="search" id="search-text" placeholder="Search" />
+          <button id="search-btn">
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: lightgrey"
+            ></i>
+          </button>
+        </li>
+      </div>
+        <div>
+      <div id="products"> <ul id="product-list">
+        
+      </ul></div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

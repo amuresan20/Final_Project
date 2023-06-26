@@ -1,0 +1,181 @@
+body {
+  background-color: #b4b1b1;
+  margin: 0 0 20px 0;
+}
+
+.navbar {
+  background-color: rgba(45, 81, 133, 0.7);
+  border: ridge;
+  border-color: rgba(41, 41, 43, 0.651);
+  height: 85px;
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
+}
+.menu {
+  display: flex;
+  gap: 55px;
+}
+
+.navbar a {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  color: #d4a6bc;
+  font-weight: light;
+  font-size: 25px;
+  margin-left: 13px;
+}
+
+.product-name {
+  font-size: 15px;
+}
+
+.border td {
+  font-size: 15px;
+}
+
+.admin-content th {
+  font-size: 15px;
+}
+
+.admin-content th {
+  border-bottom: 1px solid #000;
+  padding: 20px;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: none;
+}
+
+.admin-content th:first-child,
+table tbody td:first-child {
+  width: 200px;
+}
+
+.admin-content .product-name {
+  width: 500px;
+}
+
+.admin-content th:last-child,
+table tbody td:last-child {
+  width: 200px;
+}
+
+.delete-product {
+  width: 25px;
+  border: none;
+  color: red;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.admin-image {
+  width: 70px;
+}
+
+.border:nth-child(1n) {
+  border-bottom: 1px solid #000;
+}
+
+.border .product-name {
+  width: 600px;
+}
+
+table thead {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  background-color: rgba(15, 42, 71, 0.8);
+}
+
+#products-table-body td {
+  text-align: center;
+}
+
+.add-new-product {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.add-new-product button {
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #d4a6bc;
+  color: #fff;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.form-details {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.form-details div {
+  margin-bottom: 10px;
+}
+
+.form-details label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-details input[type="text"],
+.form-details input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.form-details div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.form-details input[type="submit"] {
+  width: 20%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+}
+
+.form-details input[type="submit"]:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.form-admin {
+  display: none;
+}
+
+.product-description {
+  display: none;
+}
