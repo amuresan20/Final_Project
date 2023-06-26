@@ -1,9 +1,13 @@
 import './style.css';
 import { getProducts } from './src/api/getProducts';
 import { createProductCard } from './src/components/productCard';
+const cors = require('cors');
+app.use(cors()); // Aplică politica CORS global pentru toate rutele
+
 
 window.addEventListener('DOMContentLoaded', () => {
 	let isLoading = true;
+console.log();
 
 	const spinnerHTML = `<div style="padding-left:40vw">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif?20170503175831" />
