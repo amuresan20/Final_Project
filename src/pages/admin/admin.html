@@ -23,55 +23,72 @@
 				  <a href=".../src/pages/admin/admin.html">Admin</a>
 				</div>
 		</div>
-		<div class = "table-wrapper">
-			<table>
+		<div id="modif-add-form" style="display: none">
+			<div id="titlu-form">
+			  <div id="context-form">
+				<h2>Introducere produs nou</h2>
+				<span></span>
+			  </div>
+			  <div id="btn-form">
+				<button id="save-form">+ Salveaza</button
+				><button id="undo-form">Anuleaza</button>
+			  </div>
+			</div>
+			<div id="id-form"><label>ID</label><span id="id-produs"></span></div>
+			<div id="imagine-form">
+			  <label>Image</label
+			  ><input
+				type="text"
+				name=""
+				id="imagine-produs"
+				placeholder="Introduceti calea catre imaginerea produsului"
+			  />
+			</div>
+			<div id="name-form">
+			  <label>Name</label
+			  ><input
+				type="text"
+				name=""
+				id="nume-produs"
+				placeholder="Introduceti numele produsului"
+			  />
+			</div>
+			<div id="price-form">
+			  <label>Price</label
+			  ><input
+				type="text"
+				name=""
+				id="pret-produs"
+				placeholder="Introduceti pretul produsului"
+			  />
+			</div>
+			<div id="quantity-form">
+				<label>Quantity</label
+				><input
+				  type="text"
+				  name=""
+				  id="cantitate-produs"
+				  placeholder="Introduceti cantitatea produsului"
+				/>
+			  </div>
+		  </div>
+	  
+			<table id="administrare">
 				<thead class="admin-content">
+					<th>Id</th>
 					<th>Image</th>
 					<th>Name</th>
-					<th class="product-description">Description</th>
 					<th>Price</th>
 					<th>Quantity</th>
-					<th>Delete</th>
+					<th><button class="modify-product">Edit</button></th>
 				</thead>
 				<tbody id="products-table-body"></tbody>
 			</table>
+			<span id="titlu-admin">
 			<div class="add-new-product">
-				<button>Add new product</button>
-			</div>
-		</div>
-			<div class="container form-admin">
-				<form class="form-details">
-					<div>
-						<label for="image">Image:</label>
-				  		<input type="text" id="image" name="image">
-					</div>
-				  
-					<div>
-						<label for="name">Name:</label>
-						<input type="text" id="name" name="name">
-					</div>
-
-					<div>
-						<label for="description">Description:</label>
-						<input type="text" id="description" name="description">
-					</div>
-				 
-					<div>
-						<label for="stock">Quantity:</label>
-						<input type="text" id="stock" name="stock">
-					</div>
-
-					<div>
-						<label for="price">Price:</label>
-				  		<input type="text" id="price" name="price">
-					 </div>
-
-				 	<div>
-						<input type="submit" value="Submit" class="submit">
-				 	</div>
-					
-				</form>
-			  </div>
+				<button> + Add new product</button>
+				<button class="delete-product">Delete</button>
+			</div></span>
 		<script type="module" src="admin.js"></script>
 	</body>
 </html>

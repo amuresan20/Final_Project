@@ -41,17 +41,12 @@ body {
 
 .admin-content th {
   border-bottom: 1px solid #000;
-  padding: 20px;
-}
-
-.table-wrapper {
-  display: flex;
-  justify-content: center;
+  padding: 25px;
 }
 
 table {
   margin-top: 15px;
-  margin-left: auto;
+  margin-left: 15px;
   margin-right: auto;
   border-collapse: collapse;
   border: none;
@@ -59,24 +54,16 @@ table {
 
 .admin-content th:first-child,
 table tbody td:first-child {
-  width: 200px;
+  width: 250px;
 }
 
 .admin-content .product-name {
-  width: 500px;
+  width: 550px;
 }
 
 .admin-content th:last-child,
 table tbody td:last-child {
   width: 200px;
-}
-
-.delete-product {
-  width: 25px;
-  border: none;
-  color: red;
-  background-color: transparent;
-  font-size: 15px;
 }
 
 .admin-image {
@@ -98,16 +85,19 @@ table thead {
   background-color: rgba(15, 42, 71, 0.8);
 }
 
-#products-table-body td {
-  text-align: center;
+.modify-product {
+  width: 85px;
+  border: 2p;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(41, 41, 43, 0.651);
+  font-size: 17px;
 }
-
 .add-new-product {
-  display: flex;
   justify-content: end;
   margin-top: 20px;
-  margin-right: 30px;
   margin-bottom: 15px;
+  margin-left: 1000px;
 }
 
 .add-new-product button {
@@ -124,56 +114,6 @@ table thead {
   height: 60vh;
   margin-top: 10px;
   margin-bottom: 20px;
-}
-
-.form-details {
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-}
-
-.form-details div {
-  margin-bottom: 10px;
-}
-
-.form-details label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-details input[type="text"],
-.form-details input[type="number"] {
-  width: 100%;
-  padding: 5px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-}
-
-.form-details div:last-child {
-  display: flex;
-  justify-content: center;
-}
-
-.form-details input[type="submit"] {
-  width: 20%;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #000;
-  color: #fff;
-  font-size: 15px;
-  border: none;
-}
-
-.form-details input[type="submit"]:hover {
-  background-color: #333;
-  cursor: pointer;
-}
-
-.form-admin {
-  display: none;
 }
 
 .product-description {
