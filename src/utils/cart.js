@@ -1,15 +1,15 @@
-export const addProductToCart = (id, price) => {
+export const addProductToCart = (id) => {
   const cart = localStorage.getItem("cart");
   let cartArray = [];
   if (cart == null) {
-    cartArray.push({ id: id, quantity: 1, price: price });
+    cartArray.push({ id: id, quantity: 1 });
     localStorage.setItem("cart", JSON.stringify(cartArray));
   } else {
     cartArray = JSON.parse(cart);
     if (isProductAlreadyInCart(id, cartArray)) {
       incrementProductQuantity(id, cartArray);
     } else {
-      cartArray.push({ id: id, quantity: 1, price: price });
+      cartArray.push({ id: id, quantity: 1 });
     }
     localStorage.setItem("cart", JSON.stringify(cartArray));
   }
